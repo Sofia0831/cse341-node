@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/Sofia0831/cse341-node#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
