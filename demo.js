@@ -1,7 +1,9 @@
+require('dotenv').config();
 const { MongoClient } = require('mongodb');
 
+
 async function main() {
-    const uri = "mongodb+srv://sofiasarabia:lemonysnicket@cluster0.2dcevtc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+    const uri = process.env.CLUSTER;
     const client = new MongoClient(uri);
 
     try{
@@ -20,6 +22,7 @@ main().catch(console.error);
 async function listDatabases(client) {
     const databasesList = await client.db().admin().listDatabases();
 
+    console.log("Testing env")
     console.log("Databases:")
     databasesList.databases.forEach(db => {
        console.log(`- ${db.name}`); 
