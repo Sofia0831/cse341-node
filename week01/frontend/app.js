@@ -13,7 +13,8 @@ app
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
-  }).use('/professional', proRoute);
+  })
+  .use('/professional', proRoute);
 
 
 mongodb.initDb((err, mongodb) => {
