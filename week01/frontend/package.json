@@ -1,0 +1,24 @@
+{
+  "name": "rest--w01-sctivity",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "week01",
+    "activity"
+  ],
+  "license": "ISC",
+  "author": "sofia sarabia",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit",
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
